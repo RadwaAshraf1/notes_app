@@ -14,12 +14,10 @@ class NoteItem extends StatelessWidget {
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
         ListTile(
-          
-           title: const Text(
+            title: const Text(
               "Notes App",
               style: TextStyle(color: Colors.black, fontSize: 26),
             ),
-          
           subtitle: Padding(
             padding: const EdgeInsets.symmetric(vertical: 16),
             child: Text(
@@ -38,7 +36,7 @@ class NoteItem extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(right: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Text("October3, 2023",
               style:
                   TextStyle(color: Colors.black.withOpacity(.5), fontSize: 14)),

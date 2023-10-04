@@ -6,16 +6,13 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding:  EdgeInsets.only(bottom: 8.0),
-      child:  Row(
+    return const Row(
           children: [
             Text("Notes",style: TextStyle(fontSize: 26),),
             Spacer(),
             CustomSearchIcon(),
           ],
-        ),
-    );
+        );
     
   }
 }
