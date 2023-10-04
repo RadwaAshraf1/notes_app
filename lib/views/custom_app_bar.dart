@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'custom_search_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -7,12 +6,16 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        Text("Notes",style: TextStyle(fontSize: 16),),
-        Spacer(),
-        CustomSearchIcon(),
-      ],
+    return const Padding(
+      padding:  EdgeInsets.only(bottom: 8.0),
+      child:  Row(
+          children: [
+            Text("Notes",style: TextStyle(fontSize: 26),),
+            Spacer(),
+            CustomSearchIcon(),
+          ],
+        ),
     );
+    
   }
 }
